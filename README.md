@@ -21,7 +21,7 @@ npm run build
 # запустите сервер
 npm run start
 
-# установите зависимости playwright
+# откройте второй терминал и установите зависимости playwright
 npx install playwright
 ```
 
@@ -67,7 +67,14 @@ BUG_ID=8 npm run test
 BUG_ID=1 npm run test:unit
 
 #запуск e2e тестов с багом
-BUG_ID=9 npm run test:unit
+BUG_ID=9 npm run test:e2e
+```
+
+**Если хотите посмотреть в debug режиме**(позволит вам наглядно видеть каждое действие во время теста):
+
+```sh
+#пример запуска в дебаг режиме
+BUG_ID=7 npx playwright test --debug
 ```
 
 > **Обратите внимание**:
